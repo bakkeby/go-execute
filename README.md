@@ -112,12 +112,12 @@ Note the use of single quotes which prevents bash from substituting variables. I
 Keep in mind that it is still bash so if you'd want to then you could add logic to check if an argument has been provided or not, e.g.
 ```
 [bash@marklet:~]
-$ gx -a 'if [[ $# = 0 ]]; then echo "Please provide a directory" else find $1 -name "*.txt"; fi' txt
-if [[ $# = 0 ]]; then echo "Please provide a directory" else find $1 -name "*.txt"; fi added as txt
+$ gx -a 'if [[ $# = 0 ]]; then echo "Please provide a directory"; else find $1 -name "*.txt"; fi' txt
+if [[ $# = 0 ]]; then echo "Please provide a directory"; else find $1 -name "*.txt"; fi added as txt
 
 [bash@marklet:~]
 $ gx txt                                                                                          
-Please provide a directory else find -name *.txt
+Please provide a directory
 ```
 
 This should allow you to set up slightly more complex aliases than before.
