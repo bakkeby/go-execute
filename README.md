@@ -6,7 +6,7 @@ Gx is a bash (and zsh) solution that allows you to bookmark often used commands 
 
 One common approach to simplify the re-use of commands is to create aliases. An even better approach is to put said commands in executable files as this gives you more flexibility in terms of argument handling and more.
 
-Not every small thing makes sense to store in a file though and it can get tricky to remember all aliases once they grow in number.
+Not every small thing makes sense to store in a file though and it can get tricky to remember all those aliases once they grow in number.
 
 Also if you have worked with aliases in the past then you might have found the limitation where any additional arguments always have to come at the end. Wouldn't it be nice if you could specify where the arguments are placed in your aliased command?
 
@@ -44,6 +44,7 @@ Bookmark often used commands and execute them later on the fly.
   -h, --help                     display this help section
   -k, --keys                     lists current keys
       --locate                   list location of data file
+      --setup_aliases            set up aliases for all bookmarks
 
 Examples:
   gx -a "ls -l ~" lshome         bookmarks the command as "lshome"

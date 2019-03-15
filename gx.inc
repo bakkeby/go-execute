@@ -328,6 +328,7 @@ function gx () {
 			printf "$fmt" "-h, --help" "display this help section"
 			printf "$fmt" "-k, --keys" "lists current keys"
 			printf "$fmt" "    --locate" "list location of data file"
+			printf "$fmt" "    --setup_aliases" "set up aliases for all bookmarks"
 			printf "\n%s\n" "Examples:"
 			printf "$fmt" "${func_name} -a \"ls -l ~\" lshome" "bookmarks the command as \"lshome\""
 			printf "$fmt" "${func_name} -l" "lists currently stored commands"
